@@ -1,0 +1,143 @@
+.hero{
+    background-image: url("../imagenes/banner-home.jpg");
+    background-size: cover;
+    height: 600px;
+    @include media-query-mobile(){
+      height: 250px;
+      background-position: left;
+    }
+    @include media-query-tablet(){
+      height: 300px;
+    }
+    @include media-query-desktop(){
+      height: 450px;
+    }
+    @include media-query-small(){
+      height: 200px;
+    }
+}
+
+section{
+  h1{
+    br{
+      @include media-query-small(){
+        display: none;
+      }
+    }
+  }
+}
+
+.seccion__explora{
+  background-image: linear-gradient(to top,$color-primario,rgb(255, 31, 31));
+  color: white;
+  h2{
+    color: white;
+  }
+
+  div{
+    .explora__caja{
+      a{
+        .explora__icono{
+          width: 150px;
+          height: 150px;
+          border: 1px solid white;
+        }
+        .explora__icono:hover{
+          box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+          -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+          -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
+        }
+      }
+      
+      .explora__nombre{
+        font-weight: 600;
+      }
+
+      .explora__descripcion{
+        height: 80px;
+      }
+    
+      @include media-query-mobile(){
+        width: 40vw;
+      }
+
+      @include media-query-tablet(){
+        width: 24vw;
+      }
+      @include media-query-desktop(){
+        width: 24vw;
+      }
+      @include media-query-small(){
+        width: 50vw;
+      }
+    }
+  }
+
+  .explora__texto{
+    @include media-query-mobile(){
+      margin: 40px;
+      br{
+        display: none;
+      }
+    }
+    @include media-query-tablet(){
+      margin: 50px;
+      br{
+        display: none;
+      }
+    }
+    @include media-query-small(){
+      margin: 40px;
+      br{
+        display: none;
+      }
+    }
+  }
+  
+}
+
+.avisos__publicaciones{
+  margin-top: 20px;
+  border: 2px solid black;
+  height: 200px;
+  overflow: auto;
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
+  strong{
+    color: $color-primario;
+  }
+}
+
+.como__trabajamos{
+  div{
+    .trabajamos__contenedor{
+      @include media-query-mobile(){
+        width: 80vw;
+      }
+      @include media-query-tablet(){
+        width: 40vw;
+      }
+      @include media-query-small(){
+        width: 80vw;
+      }
+    }
+  }
+}
+
+.seccion__valoraciones{
+  .valoraciones__caja{
+    @include media-query-mobile(){
+      width: 80vw;
+    }
+    @include media-query-tablet(){
+      width: 60vw;
+    }
+    @include media-query-desktop(){
+      width: 30vw;
+    }
+    @include media-query-small(){
+      width: 80vw;
+    }
+  }
+  
+}

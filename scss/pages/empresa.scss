@@ -1,0 +1,49 @@
+
+section{
+    .achiras__slide{
+        @include media-query-small(){
+            width: 100vw;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+        @include media-query-mobile(){
+            width: 100vw;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 100vw;
+                    }
+                }
+            }
+            
+        }
+
+        @include media-query-tablet(){
+            width: 90vw;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+
+        @include media-query-desktop(){
+            width: 800px;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 800px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
