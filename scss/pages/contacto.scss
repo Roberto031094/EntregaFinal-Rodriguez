@@ -81,6 +81,7 @@
         .enlaces__icono{
             height: 150px;
             width: 150px;
+            transition: all 1s ease;
         }
         .enlaces__icono:hover{
             transform: scale(1.3,1.3);

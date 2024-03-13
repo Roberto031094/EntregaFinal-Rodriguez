@@ -41,11 +41,13 @@ section{
           width: 150px;
           height: 150px;
           border: 1px solid white;
+          transition: all 0.5s ease;
         }
         .explora__icono:hover{
           box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
           -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
           -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
+          transition: all 0.5s ease;
         }
       }
       

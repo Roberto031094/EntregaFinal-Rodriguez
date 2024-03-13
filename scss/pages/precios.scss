@@ -7,6 +7,7 @@
         border: 1px solid white;
         background-image: linear-gradient(to top,$color-primario,rgb(255, 31, 31));
         border-radius: 20px;
+        transition: all 0.5s ease;
         img{
             height: 40px;
             width: 40px;
@@ -32,6 +33,7 @@
     }
     
     .presupuesto__info:hover{
+        transition: all 0.5s ease;
         box-shadow: 1px 5px 49px 1px $color-primario;
         -webkit-box-shadow: 1px 5px 49px 1px $color-primario;
         -moz-box-shadow: 1px 5px 49px 1px $color-primario;    
@@ -46,6 +48,7 @@
             .billeteras{
                 border-radius: 20px;
                 border: 2px solid $color-primario;
+                transition: all 1s ease;
                 @include media-query-small(){
                     width: 80vw;
                 }

@@ -165,11 +165,13 @@ footer {
   width: 150px;
   height: 150px;
   border: 1px solid white;
+  transition: all 0.5s ease;
 }
 .seccion__explora div .explora__caja a .explora__icono:hover {
   box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+  transition: all 0.5s ease;
 }
 .seccion__explora div .explora__caja .explora__nombre {
   font-weight: 600;
@@ -865,6 +867,7 @@ footer {
   border: 1px solid white;
   background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 .presupuesto__contenido .presupuesto__info img {
   height: 40px;
@@ -896,6 +899,7 @@ footer {
   }
 }
 .presupuesto__contenido .presupuesto__info:hover {
+  transition: all 0.5s ease;
   box-shadow: 1px 5px 49px 1px rgb(160, 12, 12);
   -webkit-box-shadow: 1px 5px 49px 1px rgb(160, 12, 12);
   -moz-box-shadow: 1px 5px 49px 1px rgb(160, 12, 12);
@@ -904,6 +908,7 @@ footer {
 .presupuesto__billeteras section div .billeteras {
   border-radius: 20px;
   border: 2px solid rgb(160, 12, 12);
+  transition: all 1s ease;
 }
 @media (min-width: 360px) and (max-width: 575px) {
   .presupuesto__billeteras section div .billeteras {
@@ -1021,6 +1026,7 @@ footer {
 .enlaces__redes .enlaces__lista li .enlaces__icono {
   height: 150px;
   width: 150px;
+  transition: all 1s ease;
 }
 .enlaces__redes .enlaces__lista li .enlaces__icono:hover {
   transform: scale(1.3, 1.3);
