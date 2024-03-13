@@ -737,8 +737,8 @@ footer {
   border: 1px solid white;
 }
 .presupuesto__contenido .presupuesto__info img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 @media (min-width: 360px) and (max-width: 575px) {
   .presupuesto__contenido .presupuesto__info p {
