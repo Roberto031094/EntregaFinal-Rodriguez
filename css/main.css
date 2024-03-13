@@ -83,10 +83,10 @@ header nav ul li:not(.no-hover):hover a {
     height: 70px;
   }
   header nav ul li {
-    width: fit-content;
+    width: 70px;
   }
   header nav ul li a {
-    font-size: 14px;
+    font-size: 12px;
   }
   header nav ul li a img {
     height: 40px;
@@ -735,6 +735,10 @@ footer {
 }
 .presupuesto__contenido .presupuesto__info {
   border: 1px solid white;
+}
+.presupuesto__contenido .presupuesto__info img {
+  height: 50px;
+  width: 50px;
 }
 @media (min-width: 360px) and (max-width: 575px) {
   .presupuesto__contenido .presupuesto__info p {
