@@ -4,12 +4,13 @@
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         ". truck1 serv1 serv1 serv1 truck2 ."
         ". work1 serv2 serv2 serv2 work2 ."
         ". map1 serv3 serv3 serv3 map2 ."
         ". caution1 serv4 serv4 serv4 caution2 ."
+        ". rain1 serv5 serv5 serv5 rain2 ."
     ;
     column-gap: 15px;
     row-gap: 15px;
@@ -61,45 +62,61 @@
     @include media-query-small(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
             "work1 serv2 serv2 serv2 serv2 serv2 work2 "
             "map1 serv3 serv3 serv3 serv3 serv3 map2 "
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
+            "rain1 serv5 serv5 serv5 serv5 serv5 rain2 "
         ;
     }
     @include media-query-mobile(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
             "work1 serv2 serv2 serv2 serv2 serv2 work2 "
             "map1 serv3 serv3 serv3 serv3 serv3 map2 "
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
+            "rain1 serv5 serv5 serv5 serv5 serv5 rain2 "
         ;
     }
     @include media-query-tablet(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
             "work1 serv2 serv2 serv2 serv2 serv2 work2 "
             "map1 serv3 serv3 serv3 serv3 serv3 map2 "
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
+            "rain1 serv5 serv5 serv5 serv5 serv5 rain2 "
         ;
     }
     @include media-query-desktop(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
             "work1 serv2 serv2 serv2 serv2 serv2 work2 "
             "map1 serv3 serv3 serv3 serv3 serv3 map2 "
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
+            "rain1 serv5 serv5 serv5 serv5 serv5 rain2 "
+        ;
+    }
+    @include media-query-large(){
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+            "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
+            "rain1 serv5 serv5 serv5 serv5 serv5 rain2 "
         ;
     }
 }
@@ -138,6 +155,41 @@
         width: 200px;
     }
 }
+.icono-rain{
+    grid-area: rain1;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    .paraguas{
+        animation-name: movimiento-rain;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @include media-query-small(){
+        grid-area: rain1;
+        height: 300px;
+        width: 60px;
+    }
+    @include media-query-mobile(){
+        grid-area: rain1;
+        height: 300px;
+        width: 70px;
+    }
+    @include media-query-tablet(){
+        grid-area: rain1;
+        height: 300px;
+        width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: rain1;
+        width: 200px;
+    }
+}
 .icono-truck{
     grid-area: truck1;
     height: 250px;
@@ -146,11 +198,13 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    animation-name: movimiento-truck;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    .camion{
+        animation-name: movimiento-truck;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     @include media-query-small(){
         grid-area: truck1;
         height: 300px;
@@ -179,11 +233,13 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    animation-name: movimiento-work;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    .mano{
+        animation-name: movimiento-work;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     @include media-query-small(){
         grid-area: work1;
         height: 300px;
@@ -319,6 +375,26 @@
         height: 300px;
     }
 }
+.hijo-servicio5{
+    grid-area: serv5;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-query-small(){
+        grid-area: serv5;
+        height: 300px;
+    }
+    @include media-query-mobile(){
+        grid-area: serv5;
+        height: 300px;
+    }
+    @include media-query-tablet(){
+        grid-area: serv5;
+        height: 300px;
+    }
+}
 .icono-truck2{
     grid-area: truck2;
     height: 250px;
@@ -327,11 +403,13 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    animation-name: movimiento-truck2;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    .camion2{
+        animation-name: movimiento-truck2;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     @include media-query-small(){
         grid-area: truck2;
         height: 300px;
@@ -361,11 +439,13 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    animation-name: movimiento-work;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    .mano2{
+        animation-name: movimiento-work;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     @include media-query-small(){
         grid-area: work2;
         height: 300px;
@@ -453,6 +533,41 @@
     }
     @include media-query-desktop(){
         grid-area: caution2;
+        width: 200px;
+    }
+}
+.icono-rain2{
+    grid-area: rain2;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    .paraguas2{
+        animation-name: movimiento-rain2;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @include media-query-small(){
+        grid-area: rain2;
+        height: 300px;
+        width: 60px;
+    }
+    @include media-query-mobile(){
+        grid-area: rain2;
+        height: 300px;
+        width: 70px;
+    }
+    @include media-query-tablet(){
+        grid-area: rain2;
+        height: 300px;
+        width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: rain2;
         width: 200px;
     }
 }
