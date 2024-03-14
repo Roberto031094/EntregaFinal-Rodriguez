@@ -29,9 +29,7 @@
         @include media-query-mobile(){
             width: 60vw;
         }
-
     }
-    
     .presupuesto__info:hover{
         transition: all 0.5s ease;
         box-shadow: 1px 5px 49px 1px $color-primario;
@@ -39,9 +37,6 @@
         -moz-box-shadow: 1px 5px 49px 1px $color-primario;    
     }
 }
-
-
-
 .presupuesto__billeteras{
     section{
         div{
@@ -59,7 +54,6 @@
                     width: 80vw;
                 }
             }
-            
             .billeteras:hover{
                 transform: scale(1.2,1.2);
                 transition: all 1s ease;
@@ -67,7 +61,6 @@
         }
     }
 }
-
 section{
     .presupuesto__intro{
         br{

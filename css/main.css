@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 h2 {
   color: rgb(160, 12, 12);
 }
@@ -1104,6 +1100,21 @@ footer {
   }
   .buscanos .mapa__ubicacion .mapa__info {
     width: 40vw;
+  }
+  .buscanos .mapa__ubicacion .mapa__info br {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .buscanos .mapa__ubicacion .mapa__iframe {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .buscanos .mapa__ubicacion .mapa__info {
+    width: 45vw;
   }
   .buscanos .mapa__ubicacion .mapa__info br {
     display: none;

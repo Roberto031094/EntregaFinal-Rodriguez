@@ -15,8 +15,7 @@
     @include media-query-small(){
       height: 200px;
     }
-}
-
+ }
 section{
   h1{
     br{
@@ -26,14 +25,12 @@ section{
     }
   }
 }
-
 .seccion__explora{
   background-image: linear-gradient(to top,$color-primario,rgb(255, 31, 31));
   color: white;
   h2{
     color: white;
   }
-
   div{
     .explora__caja{
       a{
@@ -50,19 +47,15 @@ section{
           transition: all 0.5s ease;
         }
       }
-      
       .explora__nombre{
         font-weight: 600;
       }
-
       .explora__descripcion{
         height: 80px;
       }
-    
       @include media-query-mobile(){
         width: 40vw;
       }
-
       @include media-query-tablet(){
         width: 24vw;
       }
@@ -74,7 +67,6 @@ section{
       }
     }
   }
-
   .explora__texto{
     @include media-query-mobile(){
       margin: 40px;
@@ -95,9 +87,7 @@ section{
       }
     }
   }
-  
 }
-
 .avisos__publicaciones{
   margin-top: 20px;
   border: 2px solid black;
@@ -109,7 +99,6 @@ section{
     color: $color-primario;
   }
 }
-
 .como__trabajamos{
   div{
     .trabajamos__contenedor{
@@ -125,7 +114,6 @@ section{
     }
   }
 }
-
 .seccion__valoraciones{
   .valoraciones__caja{
     @include media-query-mobile(){

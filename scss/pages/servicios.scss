@@ -80,7 +80,6 @@
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
         ;
     }
-
     @include media-query-tablet(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -92,7 +91,6 @@
             "caution1 serv4 serv4 serv4 serv4 serv4 caution2 "
         ;
     }
-
     @include media-query-desktop(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -105,9 +103,6 @@
         ;
     }
 }
-
-
-
 .icono-caution{
     grid-area: caution1;
     height: 250px;
@@ -143,7 +138,6 @@
         width: 200px;
     }
 }
-
 .icono-truck{
     grid-area: truck1;
     height: 250px;
@@ -325,7 +319,6 @@
         height: 300px;
     }
 }
-
 .icono-truck2{
     grid-area: truck2;
     height: 250px;
@@ -428,7 +421,6 @@
         width: 200px;
     }
 }
-
 .icono-caution2{
     grid-area: caution2;
     height: 250px;
